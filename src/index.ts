@@ -11,7 +11,7 @@ app.use(express.json());
 app.use("/characters", charactersRoutes);
 app.use("/books", bookRoutes);
 mongoose.connect(
-  "mongodb://localhost:27017/game-og-thrones",
+  "mongodb+srv://12345:12345@cluster0.ixyik.mongodb.net/game-of-thrones",
   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: false },
   () => console.log("connected to  DB")
 );
