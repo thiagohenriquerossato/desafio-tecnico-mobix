@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-    "lint:fix": "eslint --fix . --ext ts,tsx"
+    "lint:fix": "eslint --fix . --ext ts,tsx",
+    "start": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+
   },
   "dependencies": {
     "axios": "^0.21.1",
