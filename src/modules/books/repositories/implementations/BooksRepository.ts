@@ -43,7 +43,7 @@ class BooksRepository implements IBooksRepository {
       }
     }
   }
-  async list(names?: string[]): Promise<IBook[]> {
+  async list(names?: string): Promise<IBook[]> {
     if (!names) {
       const list = await BookModel.find();
       return list;
